@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 30px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .main-article {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-article img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .main-article h2 {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .main-article p {
+            margin-top: 10px;
+            color: #666;
+        }
+
+        .main-article .author {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .main-article .author img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .recent-articles {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .recent-articles h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .recent-articles ul {
+            list-style: none;
+        }
+
+        .recent-articles ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .recent-articles ul li img {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            border-radius: 10px;
+        }
+
+        .recent-articles ul li div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .recent-articles ul li div h4 {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .recent-articles ul li div span {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .btn {
+            background-color: #1b74e4;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <nav>
+            <a href="#">Product</a>
+            <a href="#">Pricing</a>
+            <a href="#">Use Cases</a>
+            <a href="#">Blog</a>
+        </nav>
+    </div>
+    <div>
+        <a href="#" class="btn">Get Started</a>
+    </div>
+</header>
+
+<div class="content">
+    
+    <div class="main-article">
+        <img src="https://avatars.mds.yandex.net/i?id=075afdabdfcf048888e8b2799561903d2659b61b-5648503-images-thumbs&n=13" alt="Main Article Image">
+        <h2>Little Things Do Make A Difference</h2>
+        <p>
+            Why do you want to motivate yourself? Actually, just answering that question fully can be one of the better ways to get your daily motivation.
+        </p>
+        <div class="author">
+            <img src="https://avatars.mds.yandex.net/i?id=495b49b6d2fd94efa242b7f4122fab08_l-4462454-images-thumbs&n=13" alt="Author">
+            <div>
+                <span>Kathryn Shelton</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="recent-articles">
+        <h3>Recent articles</h3>
+        <ul>
+            <li>
+                <img src="https://www.sunhome.ru/i/wallpapers/100/neboskrebi-vid-snizu.xxl.jpg" alt="Article 1">
+                <div>
+                    <h4>Common Symbols And Their Meanings</h4>
+                    <span>Susie Russell</span>
+                </div>
+            </li>
+            <li>
+                <img src="https://www.sunhome.ru/i/wallpapers/100/neboskrebi-vid-snizu.xxl.jpg" alt="Article 2">
+                <div>
+                    <h4>Success Steps For Your Business</h4>
+                    <span>Connor Parsons</span>
+                </div>
+            </li>
+            <li>
+                <img src="https://www.sunhome.ru/i/wallpapers/100/neboskrebi-vid-snizu.xxl.jpg" alt="Article 3">
+                <div>
+                    <h4>The Strength Of Your Belief</h4>
+                    <span>Jonathan Yates</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
